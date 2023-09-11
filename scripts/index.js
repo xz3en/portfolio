@@ -9,6 +9,44 @@ var lastRandomNumber = Math.ceil(Math.random() * texts.length);
 
 let titleElement = null;
 
+class Navbar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <h1 class="navbar-brand text-white-50" href="#">Hazardous Pit</h1>
+                    </div>
+                    <ul class="nav navbar-nav btn-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/aboutme.html">
+                                About me
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/wip.html">
+                                My projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        `
+    }
+}
+
+customElements.define("nav-bar",Navbar)
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
