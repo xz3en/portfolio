@@ -19,22 +19,22 @@ class Navbar extends HTMLElement {
                     </div>
                     <ul class="nav navbar-nav btn-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="/portfolio/">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/aboutme.html">
+                            <a class="nav-link" href="/portfolio/pages/aboutme.html">
                                 About me
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/contact.html">
+                            <a class="nav-link" href="/portfolio/pages/contact.html">
                                 Contact
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/wip.html">
+                            <a class="nav-link" href="/portfolio/pages/wip.html">
                                 My projects
                             </a>
                         </li>
